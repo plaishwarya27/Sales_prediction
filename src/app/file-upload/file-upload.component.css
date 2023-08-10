@@ -1,0 +1,24 @@
+.example-card {
+    max-width: 500px;
+    margin-bottom: 8px;
+    max-height: 500px;
+  }
+  
+  .navbar {
+    padding: 3px;
+    background-color: rgb(56, 56, 56);
+  }
+  
+  .navbar-brand {
+    padding-left: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FEFFF8;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .nav-item {
+  
+    font-size: 1.2rem;
+  
+  }

@@ -1,0 +1,18 @@
+.navbar{
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+}
+
+.navbar-brand {
+    padding-left: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FEFFF8;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.nav-item{
+    
+    font-size: 1.2rem;
+    
+}

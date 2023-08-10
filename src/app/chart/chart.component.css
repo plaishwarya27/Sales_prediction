@@ -1,0 +1,34 @@
+.chardiv {
+    width: 650px;
+    height: auto;
+}
+
+.maindiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    padding: 3px;
+    background-color: rgb(56, 56, 56);
+}
+
+.navbar-brand {
+    padding-left: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FEFFF8;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-item {
+
+    font-size: 1.2rem;
+
+}

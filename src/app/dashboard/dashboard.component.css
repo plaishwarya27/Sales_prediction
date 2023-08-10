@@ -1,0 +1,37 @@
+#img {
+    border-style: double;
+    border-width: thick;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  
+  #img:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  .imgs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .navbar {
+    padding: 3px;
+    background-color: rgb(56, 56, 56);
+  }
+  
+  .navbar-brand {
+    padding-left: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FEFFF8;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .nav-item {
+  
+    font-size: 1.2rem;
+  
+  }

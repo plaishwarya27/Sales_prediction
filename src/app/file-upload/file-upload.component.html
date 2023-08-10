@@ -1,0 +1,59 @@
+<div class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">SalesPredictor</a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a href="../register" class="nav-link" routerLink="../register">Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a href="../profile" class="nav-link" routerLink="../profile">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" (click)="logOut()"
+                class="nav-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LogOut</a>
+        </li>
+    </ul>
+</div>
+<div class="container" style="align-content: center;">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Upload File[.csv]</label>
+                <input (change)="this.onFilechange($event)" class="form-control" id="form-file" type="file"
+                    accept=".csv" #fileselect>
+                <label for="fromDate">FromDate</label>
+                <input type="text" class="form-control" name="fromDate" [(ngModel)]="fromDate" placeholder="MM-YYYY"
+                    required>
+                <label for="toDate">ToDate</label>
+                <input type="text" class="form-control" name="toDate" [(ngModel)]="toDate" placeholder="MM-YYYY"
+                    required>
+                <button (click)="this.upload()" type="button" class="btn btn-primary mt-3">Upload</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div (click)="getImage()" *ngIf="hideButton2">
+                <button class="btn btn-primary mt-3">Display Predicted Image</button>
+                <mat-card *ngIf="isHidden">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title style="font-size: 25px; text-align: center;">&nbsp;&nbsp;&nbsp;Predicted Image
+                        </mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image src="assets/{{img}}" style="height: 500px; width: 650px; padding-right: 25px;"
+                        alt="Photo of a Shiba Inu">
+                    <mat-card-content> </mat-card-content>
+                </mat-card>
+            </div>
+            <div (click)="showImage()" *ngIf="hideButton1">
+                <button class="btn btn-primary mt-3">Show All Images</button>
+            </div>
+        </div>
+    </div>
+</div>

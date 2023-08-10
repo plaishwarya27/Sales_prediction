@@ -1,0 +1,43 @@
+.btn-color {
+    background-color: #0e1c36;
+    color: #fff;
+  
+  }
+  
+  .profile-image-pic {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  
+  
+  
+  .cardbody-color {
+    background-color: #ebf2fa;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .navbar {
+    padding: 3px;
+    background-color: rgb(56, 56, 56);
+  }
+  
+  .navbar-brand {
+    padding-left: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FEFFF8;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .nav-item {
+  
+    font-size: 1.2rem;
+  }
+  body {
+      height: 100%;
+      background: orange;
+  }
